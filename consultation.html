@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料カウンセリング予約 | Case Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">CLINIC NAME</a>
+    <nav class="global-nav">
+      <a href="index.html">トップ</a>
+      <a href="#">治療解説</a>
+      <a href="cases.html">症例紹介</a>
+      <a href="consultation.html" class="is-current">無料カウンセリング</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== ページ見出し ===== -->
+<section class="page-hero">
+  <p class="eyebrow">FREE CONSULTATION</p>
+  <h1>無料カウンセリング予約</h1>
+  <p class="lead">気になる症例をご覧になった方は、まずは無料カウンセリングでお悩みをお聞かせください。</p>
+</section>
+
+<!-- ===== 予約フォーム ===== -->
+<section class="consult-form-section">
+  <form class="consult-form">
+
+    <div class="form-row">
+      <label for="name">お名前<span class="required">必須</span></label>
+      <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+    </div>
+
+    <div class="form-row">
+      <label for="tel">電話番号<span class="required">必須</span></label>
+      <input type="tel" id="tel" name="tel" placeholder="090-0000-0000" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">メールアドレス</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com">
+    </div>
+
+    <div class="form-row">
+      <label for="category">ご興味のある治療</label>
+      <select id="category" name="category">
+        <option value="">選択してください</option>
+        <option value="implant">インプラント</option>
+        <option value="ortho">矯正</option>
+        <option value="ceramic">セラミック</option>
+        <option value="whitening">ホワイトニング</option>
+        <option value="root-canal">精密根管治療</option>
+        <option value="perio">歯周治療</option>
+        <option value="unknown">まだ決まっていない</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="referrer">参考にした症例</label>
+      <input type="text" id="referrer" name="referrer" placeholder="例: 前歯のセラミッククラウンの症例">
+    </div>
+
+    <div class="form-row">
+      <label>ご希望の来院時間帯</label>
+      <div class="radio-group">
+        <label><input type="radio" name="timeslot" value="morning"> 午前</label>
+        <label><input type="radio" name="timeslot" value="afternoon"> 午後</label>
+        <label><input type="radio" name="timeslot" value="evening"> 夕方以降</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="message">ご相談内容(任意)</label>
+      <textarea id="message" name="message" rows="4" placeholder="現在のお悩みなど、あればご記入ください"></textarea>
+    </div>
+
+    <button type="submit" class="cta-btn form-submit">無料カウンセリングを予約する</button>
+    <p class="form-note">送信後、当院スタッフより折り返しご連絡いたします。</p>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 CLINIC NAME</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

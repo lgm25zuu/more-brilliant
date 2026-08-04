@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>症例紹介 | Case Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== ヘッダー ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">CLINIC NAME</a>
+    <nav class="global-nav">
+      <a href="index.html">トップ</a>
+      <a href="#">治療解説</a>
+      <a href="cases.html" class="is-current">症例紹介</a>
+      <a href="consultation.html">無料カウンセリング</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== ページ見出し ===== -->
+<section class="page-hero">
+  <p class="eyebrow">CASE GALLERY</p>
+  <h1>症例紹介</h1>
+  <p class="lead">実際の治療症例をカテゴリ別にご紹介します。</p>
+</section>
+
+<!-- ===== フィルター ===== -->
+<section class="filter-bar">
+  <div class="filter-inner">
+    <button class="filter-btn is-active" data-category="all">すべて</button>
+    <button class="filter-btn" data-category="implant">インプラント</button>
+    <button class="filter-btn" data-category="ortho">矯正</button>
+    <button class="filter-btn" data-category="ceramic">セラミック</button>
+    <button class="filter-btn" data-category="whitening">ホワイトニング</button>
+    <button class="filter-btn" data-category="root-canal">精密根管治療</button>
+  </div>
+</section>
+
+<!-- ===== 症例グリッド ===== -->
+<section class="case-grid-section">
+  <div class="case-grid" id="caseGrid">
+
+    <a href="case-detail-implant.html" class="case-card" data-category="implant">
+      <div class="case-thumb">
+        <img src="" alt="症例サムネイル">
+        <span class="case-tag">インプラント</span>
+      </div>
+      <div class="case-card-body">
+        <h3 class="case-title">奥歯の欠損をインプラントで回復</h3>
+        <p class="case-summary">咀嚼機能と見た目を同時に改善した症例です。</p>
+        <div class="case-meta">
+          <span>治療期間: 5ヶ月</span>
+          <span>費用: 440,000円〜</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="case-detail-ortho.html" class="case-card" data-category="ortho">
+      <div class="case-thumb">
+        <img src="" alt="症例サムネイル">
+        <span class="case-tag">矯正</span>
+      </div>
+      <div class="case-card-body">
+        <h3 class="case-title">マウスピース矯正で前歯のガタつきを改善</h3>
+        <p class="case-summary">目立たず短期間で歯並びを整えた症例です。</p>
+        <div class="case-meta">
+          <span>治療期間: 10ヶ月</span>
+          <span>費用: 660,000円〜</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="case-detail-ceramic.html" class="case-card" data-category="ceramic">
+      <div class="case-thumb">
+        <img src="" alt="症例サムネイル">
+        <span class="case-tag">セラミック</span>
+      </div>
+      <div class="case-card-body">
+        <h3 class="case-title">前歯のセラミッククラウンで自然な白さに</h3>
+        <p class="case-summary">変色していた被せ物を自然な質感に置き換えました。</p>
+        <div class="case-meta">
+          <span>治療期間: 3週間</span>
+          <span>費用: 132,000円〜</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="case-detail-whitening.html" class="case-card" data-category="whitening">
+      <div class="case-thumb">
+        <img src="" alt="症例サムネイル">
+        <span class="case-tag">ホワイトニング</span>
+      </div>
+      <div class="case-card-body">
+        <h3 class="case-title">オフィスホワイトニングで自然な白さへ</h3>
+        <p class="case-summary">2回の施術で歯全体のトーンアップを実現しました。</p>
+        <div class="case-meta">
+          <span>治療期間: 2週間</span>
+          <span>費用: 33,000円〜</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="case-detail-root-canal.html" class="case-card" data-category="root-canal">
+      <div class="case-thumb">
+        <img src="" alt="症例サムネイル">
+        <span class="case-tag">精密根管治療</span>
+      </div>
+      <div class="case-card-body">
+        <h3 class="case-title">マイクロスコープを用いた精密根管治療</h3>
+        <p class="case-summary">再発した根尖病変を歯科用顕微鏡下で治療しました。</p>
+        <div class="case-meta">
+          <span>治療期間: 1ヶ月</span>
+          <span>費用: 88,000円〜</span>
+        </div>
+      </div>
+    </a>
+
+
+  </div>
+
+  <p class="no-result" id="noResult" hidden>該当する症例が見つかりませんでした。</p>
+</section>
+
+<!-- ===== フッター ===== -->
+<footer class="site-footer">
+  <p>&copy; 2026 CLINIC NAME</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
