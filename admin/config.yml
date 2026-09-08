@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "cases"
+    label: "症例"
+    folder: "content/cases"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
+      - {label: "ID（半角英数字とハイフン）", name: "id", widget: "string"}
+      - label: "カテゴリ"
+        name: "category"
+        widget: "select"
+        options:
+          - {label: "インプラント", value: "implant"}
+          - {label: "矯正", value: "ortho"}
+          - {label: "セラミック", value: "ceramic"}
+          - {label: "ホワイトニング", value: "whitening"}
+          - {label: "精密根管治療", value: "root-canal"}
+          - {label: "インレー", value: "inlay"}
+      - {label: "タイトル", name: "title", widget: "string"}
+      - {label: "概要", name: "summary", widget: "text"}
+      - {label: "治療期間", name: "period", widget: "string"}
+      - {label: "費用", name: "price", widget: "string"}
+      - {label: "サムネイル画像", name: "thumbnail", widget: "image", required: false}
+      - {label: "Before画像", name: "beforeImage", widget: "image", required: false}
+      - {label: "After画像", name: "afterImage", widget: "image", required: false}
+      - {label: "詳細説明", name: "detail", widget: "text", required: false}
