@@ -45,81 +45,7 @@
 <!-- ===== 症例グリッド ===== -->
 <section class="case-grid-section">
   <div class="case-grid" id="caseGrid">
-
-    <a href="case-detail-implant.html" class="case-card" data-category="implant">
-      <div class="case-thumb">
-        <img src="" alt="症例サムネイル">
-        <span class="case-tag">インプラント</span>
-      </div>
-      <div class="case-card-body">
-        <h3 class="case-title">奥歯の欠損をインプラントで回復</h3>
-        <p class="case-summary">咀嚼機能と見た目を同時に改善した症例です。</p>
-        <div class="case-meta">
-          <span>治療期間: 5ヶ月</span>
-          <span>費用: 440,000円〜</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="case-detail-ortho.html" class="case-card" data-category="ortho">
-      <div class="case-thumb">
-        <img src="" alt="症例サムネイル">
-        <span class="case-tag">矯正</span>
-      </div>
-      <div class="case-card-body">
-        <h3 class="case-title">マウスピース矯正で前歯のガタつきを改善</h3>
-        <p class="case-summary">目立たず短期間で歯並びを整えた症例です。</p>
-        <div class="case-meta">
-          <span>治療期間: 10ヶ月</span>
-          <span>費用: 660,000円〜</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="case-detail-ceramic.html" class="case-card" data-category="ceramic">
-      <div class="case-thumb">
-        <img src="" alt="症例サムネイル">
-        <span class="case-tag">セラミック</span>
-      </div>
-      <div class="case-card-body">
-        <h3 class="case-title">前歯のセラミッククラウンで自然な白さに</h3>
-        <p class="case-summary">変色していた被せ物を自然な質感に置き換えました。</p>
-        <div class="case-meta">
-          <span>治療期間: 3週間</span>
-          <span>費用: 132,000円〜</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="case-detail-whitening.html" class="case-card" data-category="whitening">
-      <div class="case-thumb">
-        <img src="" alt="症例サムネイル">
-        <span class="case-tag">ホワイトニング</span>
-      </div>
-      <div class="case-card-body">
-        <h3 class="case-title">オフィスホワイトニングで自然な白さへ</h3>
-        <p class="case-summary">2回の施術で歯全体のトーンアップを実現しました。</p>
-        <div class="case-meta">
-          <span>治療期間: 2週間</span>
-          <span>費用: 33,000円〜</span>
-        </div>
-      </div>
-    </a>
-
-    <a href="case-detail-root-canal.html" class="case-card" data-category="root-canal">
-      <div class="case-thumb">
-        <img src="" alt="症例サムネイル">
-        <span class="case-tag">精密根管治療</span>
-      </div>
-      <div class="case-card-body">
-        <h3 class="case-title">マイクロスコープを用いた精密根管治療</h3>
-        <p class="case-summary">再発した根尖病変を歯科用顕微鏡下で治療しました。</p>
-        <div class="case-meta">
-          <span>治療期間: 1ヶ月</span>
-          <span>費用: 88,000円〜</span>
-        </div>
-      </div>
-    </a>
+  </div>
 
 
   </div>
@@ -132,6 +58,9 @@
   <p>&copy; 2026 CLINIC NAME</p>
 </footer>
 
+<script src="cases-data.js"></script>
+<script src="case-render.js"></script>
+<script>renderCaseCards('caseGrid');</script>
 <script src="script.js"></script>
 </body>
 </html>
